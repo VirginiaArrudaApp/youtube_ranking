@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #52166B;
+    --color-primary-light: #7B3FA1;
+
+    --color-background: #0F0B1A;
+    --color-surface: #1D142D;
+
+    --color-text: #EDE9F3;
+    --color-text-muted: #A78BFA;
+
+    --color-accent: #9333EA;
+    --color-border: #2E1E3E;
+
+    --color-error: #F87171;
+    --color-success: #4ADE80;
+
+    --font-roboto: "Roboto", sans-serif;
+    --font-raleway: "Raleway", sans-serif;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-roboto);
+}
+
+button {
+    @apply cursor-pointer;
+}
