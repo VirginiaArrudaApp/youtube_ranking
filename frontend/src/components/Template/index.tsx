@@ -4,10 +4,12 @@ import { Outlet } from "react-router";
 
 export default function Template() {
     return (
-        <div className="w-full min-h-screen pt-20">
+        <>
             <Navbar />
-            <Outlet />
+            <div className="w-full min-h-[calc(100vh-40px)] pt-20">
+                <Outlet />
+            </div>
             <Footer />
-        </div>
+        </>
     )
 }

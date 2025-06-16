@@ -66,7 +66,7 @@ export default function Navbar() {
     return (
         <nav 
             aria-label="Menu de navegação"
-            className="fixed top-0 left-0 flex items-center justify-between w-full h-20 border-b border-border bg-surface/95 backdrop-blur-sm"
+            className="fixed top-0 left-0 flex z-50 items-center justify-between w-full h-20 border-b border-border bg-surface/95 backdrop-blur-sm"
         >
             <Container py="none" className="h-full grid grid-cols-[1fr_auto] items-center xl:grid-cols-[1fr_198px_1fr]">
                 <div className={`

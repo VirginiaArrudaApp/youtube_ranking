@@ -25,7 +25,10 @@
 
     "baseUrl": "./",
     "paths": {
+      "@hooks/*": ["./src/hooks/*"],
+      "@utils/*": ["./src/utils/*"],
       "@pages/*": ["./src/pages/*"],
+      "@schemas/*": ["./src/schemas/*"],
       "@components/*": ["./src/components/*"]
     }
   },
