@@ -59,9 +59,9 @@ export default function Navbar() {
     const [open, setOpen] = useState(false);
     const items = [
         { href: "/", label: "Início" },
-        { href: "/ranking", label: "Classificação" },
+        { href: "/classificacao", label: "Classificação" },
         { href: "/videos", label: "Vídeos" },
-        { href: "/sobre", label: "Histórico" }
+        { href: "/historico", label: "Histórico" }
     ]
     return (
         <nav 

@@ -3,9 +3,9 @@ import { tv, type VariantProps } from "tailwind-variants"
 const title = tv({
     slots: {
         h1: "text-white text-4xl md:text-6xl font-raleway",
-        h2: "text-white text-2xl md:text-4xl font-raleway",
+        h2: "text-white text-3xl md:text-5xl font-raleway",
         h3: "text-white text-3xl md:text-5xl font-raleway",
-        h4: "text-white text-xl 2xl:text-3xl font-raleway",
+        h4: "text-white text-3xl md:text-5xl font-raleway",
         h6: "text-white text-base font-semibold"
     }
 });

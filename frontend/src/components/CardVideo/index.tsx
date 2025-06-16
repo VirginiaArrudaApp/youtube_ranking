@@ -17,7 +17,7 @@ export default function CardVideo({ data }: CardVideoProps) {
                 />
             </div>
             <p className="text-text font-light mb-4">{data.title}</p>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center justify-center gap-6">
                 <p className="flex items-center gap-1 font-light"><MessagesSquare className="size-4 stroke-1" />{data.comments}</p>
                 <p className="flex items-center gap-1 font-light"><ThumbsUp className="size-4 stroke-1" />{data.likes}</p>
                 <p className="flex items-center gap-1 font-light"><Eye className="size-4 stroke-1" />{data.views}</p>

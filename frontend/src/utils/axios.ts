@@ -1,5 +1,8 @@
 import axios from "axios";
 
+const API = "https://backend-green-surf-7062.fly.dev";
+
 export const api = axios.create({
-    baseURL: "http://localhost:3000"
+    baseURL: API,
+    headers: { "Content-Type": "application/json" }
 });

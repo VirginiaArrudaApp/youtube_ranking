@@ -1,9 +1,12 @@
+import { useNavigate } from "react-router";
 import Button from "@components/Button";
 import Container from "@components/Container";
 import Title from "@components/Title";
 import { ArrowUpRight, BookAlert, Trophy } from "lucide-react";
 
 export default function Home() {
+    const navigate = useNavigate();
+
     return (
         <>
             <Container>
@@ -40,8 +43,8 @@ export default function Home() {
                     </ul>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-2 sm:flex-row">
-                    <Button className="w-full sm:w-auto"> Quero participar <ArrowUpRight className="size-5" /></Button>
-                    <Button className="w-full sm:w-auto"> Ver classificação <Trophy className="size-4" /></Button>
+                    <Button className="w-full sm:w-auto" onClick={() => window.open("https://www.youtube.com/@VirginiaArruda", "_blank")}> Participar <ArrowUpRight className="size-5" /></Button>
+                    <Button className="w-full sm:w-auto" onClick={() => navigate("/classificacao")}> Ver classificação <Trophy className="size-4" /></Button>
                 </div>
             </Container>
         </>
